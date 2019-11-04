@@ -19,7 +19,7 @@
     <session id="-1706651478">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.2" value="1" />
@@ -127,7 +127,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/entity/PersonInfo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+              <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -231,77 +231,6 @@
             <path>
               <item name="o2o" type="b2602c69:ProjectViewProjectNode" />
               <item name="o2o" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="o2o" type="b2602c69:ProjectViewProjectNode" />
-              <item name="o2o" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="o2o" type="b2602c69:ProjectViewProjectNode" />
-              <item name="o2o" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="o2o" type="b2602c69:ProjectViewProjectNode" />
-              <item name="o2o" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="o2o" type="b2602c69:ProjectViewProjectNode" />
-              <item name="o2o" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="o2o" type="b2602c69:ProjectViewProjectNode" />
-              <item name="o2o" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="imooc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="o2o" type="b2602c69:ProjectViewProjectNode" />
-              <item name="o2o" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="imooc" type="462c0819:PsiDirectoryNode" />
-              <item name="o2o" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="o2o" type="b2602c69:ProjectViewProjectNode" />
-              <item name="o2o" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="imooc" type="462c0819:PsiDirectoryNode" />
-              <item name="o2o" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="o2o" type="b2602c69:ProjectViewProjectNode" />
-              <item name="o2o" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="o2o" type="b2602c69:ProjectViewProjectNode" />
-              <item name="o2o" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -502,7 +431,7 @@
       <workItem from="1572358702019" duration="1260000" />
       <workItem from="1572360250981" duration="2555000" />
       <workItem from="1572445969016" duration="2475000" />
-      <workItem from="1572448527416" duration="598000" />
+      <workItem from="1572448527416" duration="746000" />
     </task>
     <servers />
   </component>
@@ -512,7 +441,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13544000" />
+    <option name="totallyTimeSpent" value="13692000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -620,7 +549,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/entity/PersonInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
         </state>
       </provider>
     </entry>
