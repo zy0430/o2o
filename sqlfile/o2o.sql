@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2019-11-05 00:02:59
+Date: 2019-11-05 23:34:08
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -97,6 +97,71 @@ CREATE TABLE `tb_person_info` (
 
 -- ----------------------------
 -- Records of tb_person_info
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for tb_product
+-- ----------------------------
+DROP TABLE IF EXISTS `tb_product`;
+CREATE TABLE `tb_product` (
+  `product_id` int(11) NOT NULL AUTO_INCREMENT,
+  `product_name` varchar(2000) DEFAULT NULL,
+  `product_desc` varchar(2000) DEFAULT NULL,
+  `img_addr` varchar(2000) NOT NULL,
+  `normal_price` varchar(255) DEFAULT NULL,
+  `promotion_price` varchar(255) DEFAULT NULL,
+  `priority` int(2) DEFAULT 0,
+  `create_time` datetime DEFAULT NULL,
+  `last_edit_time` datetime DEFAULT NULL,
+  `enable_status` int(10) NOT NULL DEFAULT 0,
+  `point` int(10) NOT NULL,
+  PRIMARY KEY (`product_id`,`point`),
+  KEY `product_id` (`product_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of tb_product
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for tb_product_category
+-- ----------------------------
+DROP TABLE IF EXISTS `tb_product_category`;
+CREATE TABLE `tb_product_category` (
+  `product_category_id` int(11) NOT NULL AUTO_INCREMENT,
+  `shop_id` int(11) NOT NULL,
+  `product_category_name` varchar(1000) DEFAULT NULL,
+  `productCategoryDesc` varchar(2000) DEFAULT NULL,
+  `priority` int(2) NOT NULL DEFAULT 0,
+  `create_time` datetime DEFAULT NULL,
+  `last_edit_time` datetime DEFAULT NULL,
+  PRIMARY KEY (`product_category_id`),
+  KEY `shop_id` (`shop_id`),
+  CONSTRAINT `tb_product_category_ibfk_1` FOREIGN KEY (`shop_id`) REFERENCES `tb_shop` (`shop_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of tb_product_category
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for tb_product_img
+-- ----------------------------
+DROP TABLE IF EXISTS `tb_product_img`;
+CREATE TABLE `tb_product_img` (
+  `product_img_id` int(20) NOT NULL AUTO_INCREMENT,
+  `img_addr` varchar(2000) NOT NULL,
+  `img_desc` varchar(2000) DEFAULT NULL,
+  `priority` int(2) DEFAULT 0,
+  `create_time` datetime DEFAULT NULL,
+  `product_id` int(20) DEFAULT NULL,
+  PRIMARY KEY (`product_img_id`),
+  KEY `product_id` (`product_id`),
+  CONSTRAINT `tb_product_img_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `tb_product` (`product_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of tb_product_img
 -- ----------------------------
 
 -- ----------------------------
