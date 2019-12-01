@@ -5,7 +5,6 @@ import java.util.Date;
 public class Area {
     private Long areaId;
     private String areaName;
-    private String areaDesc;
     private Integer priority;
     private Date createTime;
     private Date lastEditTime;
@@ -24,14 +23,6 @@ public class Area {
 
     public void setAreaName(String areaName) {
         this.areaName = areaName;
-    }
-
-    public String getAreaDesc() {
-        return areaDesc;
-    }
-
-    public void setAreaDesc(String areaDesc) {
-        this.areaDesc = areaDesc;
     }
 
     public Integer getPriority() {
@@ -63,7 +54,6 @@ public class Area {
         return "Area{" +
                 "areaId=" + areaId +
                 ", areaName='" + areaName + '\'' +
-                ", areaDesc='" + areaDesc + '\'' +
                 ", priority=" + priority +
                 ", createTime=" + createTime +
                 ", lastEditTime=" + lastEditTime +
