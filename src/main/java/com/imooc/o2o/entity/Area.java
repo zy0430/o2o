@@ -9,9 +9,6 @@ public class Area {
     private Date createTime;
     private Date lastEditTime;
 
-    Area() {
-
-    };
     public Long getAreaId() {
         return areaId;
     }

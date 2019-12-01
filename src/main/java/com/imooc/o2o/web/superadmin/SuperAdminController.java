@@ -7,6 +7,8 @@ import java.util.ArrayList;
 
 import com.imooc.o2o.entity.Area;
 import com.imooc.o2o.service.AreaService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -22,9 +24,13 @@ public class SuperAdminController {
     @Autowired
     private AreaService areaService;
 
+    Logger logger = LoggerFactory.getLogger(SuperAdminController.class);
+
     @RequestMapping(value = "/area", method = RequestMethod.GET)
     @ResponseBody
     public Map<String, Object> getAreas() {
+
+        logger.info("-----start-----");
         try {
             result = areaService.getAreas();
             mapMode.put("rows", result.toString());
@@ -33,6 +39,7 @@ public class SuperAdminController {
             mapMode.put("rows", e.toString());
             mapMode.put("total", 0);
         }
+        logger.info("-----end-----");
         return mapMode;
     }
 }

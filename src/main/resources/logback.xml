@@ -6,15 +6,15 @@
     <property name="log.pattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS}[%thread]%-5level%logger{50}-%msg%n" />
 
     <appender name="consoleAppends" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder>
-            <pattern>${log.pattern}</pattern>
-        </encoder>
+    <encoder>
+        <pattern>${log.pattern}</pattern>
+    </encoder>
     </appender>
     <!--DEBUG-->
     <appender name="debugAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${log.filePath}/debug.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <FileNamePattern>${catalina.base}/webapps/myo2o/logs/debug/debug.%d{yyyy-MM-dd}.%i.log.zip</FileNamePattern>
+            <FileNamePattern>${catalina.base}/webapps/o2o/logs/debug/debug.%d{yyyy-MM-dd}.log.zip</FileNamePattern>
             <maxHistory>${log.maxHistory}</maxHistory>
         </rollingPolicy>
         <encoder>${log.pattern}</encoder>
@@ -28,7 +28,7 @@
     <appender name="infoAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${log.filePath}/info.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <FileNamePattern>${catalina.base}/webapps/o2o/logs/info/info.%d{yyyy-MM-dd}.%i.log.zip</FileNamePattern>
+            <FileNamePattern>${catalina.base}/webapps/o2o/logs/info/info.%d{yyyy-MM-dd}.log.zip</FileNamePattern>
             <maxHistory>${log.maxHistory}</maxHistory>
         </rollingPolicy>
         <encoder>${log.pattern}</encoder>
@@ -42,7 +42,7 @@
     <appender name="errorAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${log.filePath}/error.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <FileNamePattern>${catalina.base}/webapps/o2o/logs/error/error.%d{yyyy-MM-dd}.%i.log.zip</FileNamePattern>
+            <FileNamePattern>${catalina.base}/webapps/o2o/logs/error/error.%d{yyyy-MM-dd}.log.zip</FileNamePattern>
             <maxHistory>${log.maxHistory}</maxHistory>
         </rollingPolicy>
         <encoder>${log.pattern}</encoder>
