@@ -15,7 +15,7 @@ public class PathUtil {
        String basePath = "";
 
        if (os.toLowerCase().startsWith("win")) {
-           basePath = "F:/centos7/pic";
+           basePath = "F:/centos7/pic/";
        } else {
            basePath = "/upload/item/shop/";
        }
@@ -24,7 +24,7 @@ public class PathUtil {
    }
 
    public static String getShopImgPath(long shopId) {
-       String imagePath = "/upload/item/shop/" + shopId + "/";
+       String imagePath = shopId + "/";
        String basePath = imagePath.replace("/", seperator);
        return basePath;
    }
@@ -34,5 +34,10 @@ public class PathUtil {
        int rannum = (int) (r.nextDouble() * (99999 - 10000 + 1)) + 10000; // 获取随机数
        String nowTimeStr = sDateFormat.format(new Date()); // 当前时间
        return nowTimeStr + rannum;
+   }
+
+   public static String changePathFormat(String path) {
+       String newPath = path.replace("\\", "/");
+       return newPath;
    }
 }
